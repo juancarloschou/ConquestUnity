@@ -17,12 +17,14 @@ namespace Assets
         public int BasementPlayer; // starting basement of player (1, 2, 0)
         public List<Vector2> TerritoryBoundary; // for drawing the sides of territory
 
-        public Territory(string id, int resource, int strength, List<Vector2> boundary)
+        public Territory(string id, int resourceValue, int defendersStrength, int player, int basementPlayer, List<Vector2> territoryBoundary)
         {
             Id = id;
-            ResourceValue = resource;
-            DefendersStrength = strength;
-            TerritoryBoundary = boundary;
+            ResourceValue = resourceValue;
+            DefendersStrength = defendersStrength;
+            Player = player;
+            BasementPlayer = basementPlayer;
+            TerritoryBoundary = territoryBoundary;
         }
     }
 

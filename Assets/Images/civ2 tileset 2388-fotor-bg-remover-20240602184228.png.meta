@@ -1,0 +1,1580 @@
+fileFormatVersion: 2
+guid: e8de02b12e8240745bdb3c27a57e5094
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8140658929453738170
+    second: civ2 tileset 2388-fotor-bg-remover-20240602184228_0
+  - first:
+      213: -1059111856332184201
+    second: civ2 tileset 2388-fotor-bg-remover-20240602184228_1
+  - first:
+      213: 7518262608727779958
+    second: civ2 tileset 2388-fotor-bg-remover-20240602184228_2
+  - first:
+      213: 7105568310182476628
+    second: civ2 tileset 2388-fotor-bg-remover-20240602184228_3
+  - first:
+      213: -2659523474684330677
+    second: civ2 tileset 2388-fotor-bg-remover-20240602184228_4
+  - first:
+      213: -5228003777550725304
+    second: civ2 tileset 2388-fotor-bg-remover-20240602184228_5
+  - first:
+      213: 1356299059972003224
+    second: civ2 tileset 2388-fotor-bg-remover-20240602184228_6
+  - first:
+      213: -7605183809124563455
+    second: civ2 tileset 2388-fotor-bg-remover-20240602184228_7
+  - first:
+      213: -6643676968940279072
+    second: civ2 tileset 2388-fotor-bg-remover-20240602184228_8
+  - first:
+      213: -7183628300634266657
+    second: civ2 tileset 2388-fotor-bg-remover-20240602184228_9
+  - first:
+      213: -3305272404624826853
+    second: civ2 tileset 2388-fotor-bg-remover-20240602184228_10
+  - first:
+      213: 8437170638872582683
+    second: civ2 tileset 2388-fotor-bg-remover-20240602184228_11
+  - first:
+      213: 4124972725110560499
+    second: civ2 tileset 2388-fotor-bg-remover-20240602184228_12
+  - first:
+      213: -4620309187157287604
+    second: civ2 tileset 2388-fotor-bg-remover-20240602184228_13
+  - first:
+      213: 1710830773537377035
+    second: civ2 tileset 2388-fotor-bg-remover-20240602184228_14
+  - first:
+      213: -3165009824652728210
+    second: civ2 tileset 2388-fotor-bg-remover-20240602184228_15
+  - first:
+      213: 4050460657539215995
+    second: civ2 tileset 2388-fotor-bg-remover-20240602184228_16
+  - first:
+      213: -7408587355987956774
+    second: civ2 tileset 2388-fotor-bg-remover-20240602184228_17
+  - first:
+      213: 6094237884269600043
+    second: civ2 tileset 2388-fotor-bg-remover-20240602184228_18
+  - first:
+      213: 8662477807333304378
+    second: civ2 tileset 2388-fotor-bg-remover-20240602184228_19
+  - first:
+      213: -2859052783551901616
+    second: civ2 tileset 2388-fotor-bg-remover-20240602184228_20
+  - first:
+      213: 3585028723140581614
+    second: civ2 tileset 2388-fotor-bg-remover-20240602184228_21
+  - first:
+      213: 2774601271480577610
+    second: civ2 tileset 2388-fotor-bg-remover-20240602184228_22
+  - first:
+      213: 838158411516604497
+    second: civ2 tileset 2388-fotor-bg-remover-20240602184228_23
+  - first:
+      213: -1143886549710349213
+    second: civ2 tileset 2388-fotor-bg-remover-20240602184228_24
+  - first:
+      213: 3820458874005475962
+    second: civ2 tileset 2388-fotor-bg-remover-20240602184228_25
+  - first:
+      213: 2969427756994363565
+    second: civ2 tileset 2388-fotor-bg-remover-20240602184228_26
+  - first:
+      213: 8891149072229547294
+    second: civ2 tileset 2388-fotor-bg-remover-20240602184228_27
+  - first:
+      213: -4562093770099386912
+    second: civ2 tileset 2388-fotor-bg-remover-20240602184228_28
+  - first:
+      213: 8825355484488130867
+    second: civ2 tileset 2388-fotor-bg-remover-20240602184228_29
+  - first:
+      213: -3144776989503863958
+    second: civ2 tileset 2388-fotor-bg-remover-20240602184228_30
+  - first:
+      213: -5423068632136030377
+    second: civ2 tileset 2388-fotor-bg-remover-20240602184228_31
+  - first:
+      213: -7244968990168555788
+    second: civ2 tileset 2388-fotor-bg-remover-20240602184228_32
+  - first:
+      213: 705454143926836215
+    second: civ2 tileset 2388-fotor-bg-remover-20240602184228_33
+  - first:
+      213: -2083490296738955116
+    second: civ2 tileset 2388-fotor-bg-remover-20240602184228_34
+  - first:
+      213: 7471448933395466228
+    second: civ2 tileset 2388-fotor-bg-remover-20240602184228_35
+  - first:
+      213: 8657903639529198408
+    second: civ2 tileset 2388-fotor-bg-remover-20240602184228_36
+  - first:
+      213: -462996846458457245
+    second: civ2 tileset 2388-fotor-bg-remover-20240602184228_37
+  - first:
+      213: -7778284010867354072
+    second: civ2 tileset 2388-fotor-bg-remover-20240602184228_38
+  - first:
+      213: 2018195714475222509
+    second: civ2 tileset 2388-fotor-bg-remover-20240602184228_39
+  - first:
+      213: 2692793716485633153
+    second: civ2 tileset 2388-fotor-bg-remover-20240602184228_40
+  - first:
+      213: 7859803585399675000
+    second: civ2 tileset 2388-fotor-bg-remover-20240602184228_41
+  - first:
+      213: 5282902929599903768
+    second: civ2 tileset 2388-fotor-bg-remover-20240602184228_42
+  - first:
+      213: 2190133744428982670
+    second: civ2 tileset 2388-fotor-bg-remover-20240602184228_43
+  - first:
+      213: -9209851961956139057
+    second: civ2 tileset 2388-fotor-bg-remover-20240602184228_44
+  - first:
+      213: -409546733239770344
+    second: civ2 tileset 2388-fotor-bg-remover-20240602184228_45
+  - first:
+      213: 66067594450091997
+    second: civ2 tileset 2388-fotor-bg-remover-20240602184228_46
+  - first:
+      213: 2581471603532279436
+    second: civ2 tileset 2388-fotor-bg-remover-20240602184228_47
+  - first:
+      213: 1537688834068820993
+    second: civ2 tileset 2388-fotor-bg-remover-20240602184228_48
+  - first:
+      213: -1341101615540210422
+    second: civ2 tileset 2388-fotor-bg-remover-20240602184228_49
+  - first:
+      213: 4336419847032566184
+    second: civ2 tileset 2388-fotor-bg-remover-20240602184228_50
+  - first:
+      213: 5394444951740970198
+    second: civ2 tileset 2388-fotor-bg-remover-20240602184228_51
+  - first:
+      213: 8695494766182082005
+    second: civ2 tileset 2388-fotor-bg-remover-20240602184228_52
+  - first:
+      213: 760353576999228418
+    second: civ2 tileset 2388-fotor-bg-remover-20240602184228_53
+  - first:
+      213: -2140258879425381532
+    second: civ2 tileset 2388-fotor-bg-remover-20240602184228_54
+  - first:
+      213: 1949745208726325011
+    second: civ2 tileset 2388-fotor-bg-remover-20240602184228_55
+  - first:
+      213: 7297624689018936401
+    second: civ2 tileset 2388-fotor-bg-remover-20240602184228_56
+  - first:
+      213: 2911541106356028293
+    second: civ2 tileset 2388-fotor-bg-remover-20240602184228_57
+  - first:
+      213: 2455218113886125376
+    second: civ2 tileset 2388-fotor-bg-remover-20240602184228_58
+  - first:
+      213: 5471777595805839749
+    second: civ2 tileset 2388-fotor-bg-remover-20240602184228_59
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: civ2 tileset 2388-fotor-bg-remover-20240602184228_0
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 410
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab8a3bf4a2e69f070800000000000000
+      internalID: 8140658929453738170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388-fotor-bg-remover-20240602184228_1
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 414
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7756ae9c0674d41f0800000000000000
+      internalID: -1059111856332184201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388-fotor-bg-remover-20240602184228_2
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 373
+        width: 51
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67a2259520c365860800000000000000
+      internalID: 7518262608727779958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388-fotor-bg-remover-20240602184228_3
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 380
+        width: 50
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45bf2bf2bbc0c9260800000000000000
+      internalID: 7105568310182476628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388-fotor-bg-remover-20240602184228_4
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 413
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4db0a39d79771bd0800000000000000
+      internalID: -2659523474684330677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388-fotor-bg-remover-20240602184228_5
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 381
+        width: 58
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84f40b273466277b0800000000000000
+      internalID: -5228003777550725304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388-fotor-bg-remover-20240602184228_6
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 382
+        width: 58
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 895d3de1fca82d210800000000000000
+      internalID: 1356299059972003224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388-fotor-bg-remover-20240602184228_7
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 372
+        width: 38
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 106049d9e95f47690800000000000000
+      internalID: -7605183809124563455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388-fotor-bg-remover-20240602184228_8
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 370
+        width: 41
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0eaeed71ffaecc3a0800000000000000
+      internalID: -6643676968940279072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388-fotor-bg-remover-20240602184228_9
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 372
+        width: 54
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd3604efe10ae4c90800000000000000
+      internalID: -7183628300634266657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388-fotor-bg-remover-20240602184228_10
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 379
+        width: 47
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1e9f6492405122d0800000000000000
+      internalID: -3305272404624826853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388-fotor-bg-remover-20240602184228_11
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 324
+        width: 33
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1a1b577ef9d61570800000000000000
+      internalID: 8437170638872582683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388-fotor-bg-remover-20240602184228_12
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 323
+        width: 41
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f6d364a6d8de3930800000000000000
+      internalID: 4124972725110560499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388-fotor-bg-remover-20240602184228_13
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 329
+        width: 54
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4d1403164d51efb0800000000000000
+      internalID: -4620309187157287604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388-fotor-bg-remover-20240602184228_14
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 329
+        width: 56
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0b808f26871eb710800000000000000
+      internalID: 1710830773537377035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388-fotor-bg-remover-20240602184228_15
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 334
+        width: 38
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e68e3fa5550a314d0800000000000000
+      internalID: -3165009824652728210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388-fotor-bg-remover-20240602184228_16
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 333
+        width: 44
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b72f15df180263830800000000000000
+      internalID: 4050460657539215995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388-fotor-bg-remover-20240602184228_17
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 333
+        width: 55
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adb23e65d096f2990800000000000000
+      internalID: -7408587355987956774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388-fotor-bg-remover-20240602184228_18
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 335
+        width: 58
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2d1e9c2115139450800000000000000
+      internalID: 6094237884269600043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388-fotor-bg-remover-20240602184228_19
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 288
+        width: 38
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a386ec48bad473870800000000000000
+      internalID: 8662477807333304378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388-fotor-bg-remover-20240602184228_20
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 286
+        width: 47
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0501c4a24aa9258d0800000000000000
+      internalID: -2859052783551901616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388-fotor-bg-remover-20240602184228_21
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 284
+        width: 50
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee8dd5021a490c130800000000000000
+      internalID: 3585028723140581614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388-fotor-bg-remover-20240602184228_22
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 285
+        width: 50
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4e62fbe72d518620800000000000000
+      internalID: 2774601271480577610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388-fotor-bg-remover-20240602184228_23
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 293
+        width: 44
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 150f3ff62acb1ab00800000000000000
+      internalID: 838158411516604497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388-fotor-bg-remover-20240602184228_24
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 292
+        width: 51
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36cda2d5e391020f0800000000000000
+      internalID: -1143886549710349213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388-fotor-bg-remover-20240602184228_25
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 290
+        width: 56
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a72d510ba1ff40530800000000000000
+      internalID: 3820458874005475962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388-fotor-bg-remover-20240602184228_26
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 290
+        width: 56
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da085d1ffc6853920800000000000000
+      internalID: 2969427756994363565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388-fotor-bg-remover-20240602184228_27
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 243
+        width: 35
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1d394f49f4b36b70800000000000000
+      internalID: 8891149072229547294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388-fotor-bg-remover-20240602184228_28
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 244
+        width: 45
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e5143913ef20b0c0800000000000000
+      internalID: -4562093770099386912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388-fotor-bg-remover-20240602184228_29
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 243
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 331e57ded06f97a70800000000000000
+      internalID: 8825355484488130867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388-fotor-bg-remover-20240602184228_30
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 241
+        width: 54
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a63ccc26df18b54d0800000000000000
+      internalID: -3144776989503863958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388-fotor-bg-remover-20240602184228_31
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 246
+        width: 42
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 757e7fccfc36db4b0800000000000000
+      internalID: -5423068632136030377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388-fotor-bg-remover-20240602184228_32
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 248
+        width: 49
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fe5844c613b47b90800000000000000
+      internalID: -7244968990168555788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388-fotor-bg-remover-20240602184228_33
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 246
+        width: 54
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fb16166ec64ac900800000000000000
+      internalID: 705454143926836215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388-fotor-bg-remover-20240602184228_34
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 245
+        width: 58
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 490c6e92d94f513e0800000000000000
+      internalID: -2083490296738955116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388-fotor-bg-remover-20240602184228_35
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 196
+        width: 31
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f70280383befa760800000000000000
+      internalID: 7471448933395466228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388-fotor-bg-remover-20240602184228_36
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 195
+        width: 36
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84313b51d7d072870800000000000000
+      internalID: 8657903639529198408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388-fotor-bg-remover-20240602184228_37
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 197
+        width: 50
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 363b7ba32da1399f0800000000000000
+      internalID: -462996846458457245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388-fotor-bg-remover-20240602184228_38
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 197
+        width: 54
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 826962a37ebfd0490800000000000000
+      internalID: -7778284010867354072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388-fotor-bg-remover-20240602184228_39
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 200
+        width: 37
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de5e2883f42120c10800000000000000
+      internalID: 2018195714475222509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388-fotor-bg-remover-20240602184228_40
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 199
+        width: 41
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 184b78c3e99be5520800000000000000
+      internalID: 2692793716485633153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388-fotor-bg-remover-20240602184228_41
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 199
+        width: 56
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 878d618c7b1a31d60800000000000000
+      internalID: 7859803585399675000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388-fotor-bg-remover-20240602184228_42
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 203
+        width: 59
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8183ca57934a05940800000000000000
+      internalID: 5282902929599903768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388-fotor-bg-remover-20240602184228_43
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 153
+        width: 31
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e812947690be46e10800000000000000
+      internalID: 2190133744428982670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388-fotor-bg-remover-20240602184228_44
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 153
+        width: 39
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcf7badbf68003080800000000000000
+      internalID: -9209851961956139057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388-fotor-bg-remover-20240602184228_45
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 154
+        width: 41
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 813625e7a6ff05af0800000000000000
+      internalID: -409546733239770344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388-fotor-bg-remover-20240602184228_46
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 150
+        width: 47
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddfbc5a8028bae000800000000000000
+      internalID: 66067594450091997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388-fotor-bg-remover-20240602184228_47
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 155
+        width: 36
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8eac460fba33d320800000000000000
+      internalID: 2581471603532279436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388-fotor-bg-remover-20240602184228_48
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 157
+        width: 44
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 104b1c9f8d7f65510800000000000000
+      internalID: 1537688834068820993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388-fotor-bg-remover-20240602184228_49
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 157
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a05f506af23736de0800000000000000
+      internalID: -1341101615540210422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388-fotor-bg-remover-20240602184228_50
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 158
+        width: 53
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a1745320ee0e2c30800000000000000
+      internalID: 4336419847032566184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388-fotor-bg-remover-20240602184228_51
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 108
+        width: 34
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d47be44a1becda40800000000000000
+      internalID: 5394444951740970198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388-fotor-bg-remover-20240602184228_52
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 109
+        width: 37
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d52d8c4b6a9ca870800000000000000
+      internalID: 8695494766182082005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388-fotor-bg-remover-20240602184228_53
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 109
+        width: 48
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2049cbcbc815d8a00800000000000000
+      internalID: 760353576999228418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388-fotor-bg-remover-20240602184228_54
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 110
+        width: 50
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46b797483e54c42e0800000000000000
+      internalID: -2140258879425381532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388-fotor-bg-remover-20240602184228_55
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 107
+        width: 42
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31707a8efe2ee0b10800000000000000
+      internalID: 1949745208726325011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388-fotor-bg-remover-20240602184228_56
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 107
+        width: 43
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15c181d7dfe564560800000000000000
+      internalID: 7297624689018936401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388-fotor-bg-remover-20240602184228_57
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 108
+        width: 56
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5838c41d53fd76820800000000000000
+      internalID: 2911541106356028293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388-fotor-bg-remover-20240602184228_58
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 108
+        width: 53
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04d7944cddfa21220800000000000000
+      internalID: 2455218113886125376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388-fotor-bg-remover-20240602184228_59
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 28
+        width: 17
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 581b2ff8bb8afeb40800000000000000
+      internalID: 5471777595805839749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

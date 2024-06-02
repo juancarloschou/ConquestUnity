@@ -418,6 +418,7 @@ MonoBehaviour:
   territories: []
   territoryLineMaterial: {fileID: 2100000, guid: 9bdd09a4304c0ce4a84a6c46f119fa80, type: 2}
   selectedTerritoryMaterial: {fileID: 2100000, guid: 0151dea1ab44eb346906989b172b0364, type: 2}
+  basementSprite: {fileID: -62833669, guid: c88570d4025010a4d93e88cb1ca712a3, type: 3}
 --- !u!4 &238950407
 Transform:
   m_ObjectHideFlags: 0

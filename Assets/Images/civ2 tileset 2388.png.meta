@@ -1,0 +1,1727 @@
+fileFormatVersion: 2
+guid: c88570d4025010a4d93e88cb1ca712a3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1590276075898125970
+    second: civ2 tileset 2388_0
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: civ2 tileset 2388_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 406
+        width: 65
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcbd82a23a25cd34f93af078b61efce9
+      internalID: 1260163180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388_1
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 406
+        width: 65
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5275909c02b667144b48977938752232
+      internalID: -671541978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388_2
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 406
+        width: 65
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01f3769d1231f9945b86dbf4b424a6bc
+      internalID: -551317725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388_3
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 406
+        width: 65
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dce9dd52e2dee048933e997720fdc35
+      internalID: 795927053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388_4
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 406
+        width: 65
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d47117a2f1f5c8429fd8cc1fe38df81
+      internalID: 6936999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388_5
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 406
+        width: 65
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5ab7bf4d58c9644babcab865a8f66df
+      internalID: 1970016557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388_6
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 406
+        width: 65
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5799e2cb020fb8a4a8dd2dda193ee01a
+      internalID: -514113990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388_7
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 406
+        width: 65
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cc045fc2a6e83d45a465fef75e55c0f
+      internalID: 403692513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388_8
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 358
+        width: 65
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad2b0b9f418ea9843ba823623c8e90dd
+      internalID: -1783272550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388_9
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 358
+        width: 65
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f6114ecc5352f746924d95960bb156e
+      internalID: -532254406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388_10
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 358
+        width: 65
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d18c2440be1481459b82baee00157d5
+      internalID: 1639091607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388_11
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 358
+        width: 65
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56d25d23c7feb3b4db8f98616f1e9583
+      internalID: 689162178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388_12
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 358
+        width: 65
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29dffb44ae762f44eb9950caaf29250f
+      internalID: 29253084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388_13
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 358
+        width: 65
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 993e0ad9edcccd947af63d288ca62a53
+      internalID: 1781928272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388_14
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 358
+        width: 65
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5b4080368d912646a8fa2d53e32d306
+      internalID: -1862315433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388_15
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 358
+        width: 65
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4616f35ca45ab6d44a35ee16cbed5760
+      internalID: 993382982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388_16
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 310
+        width: 65
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9c5509f6cf7de04fb628b802249cf07
+      internalID: -871630757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388_17
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 310
+        width: 65
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e08fd47532b5e6d488f1366bf825c4f1
+      internalID: 947670474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388_18
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 310
+        width: 65
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8945b9c8ceac4dc438a7120fbeaf7857
+      internalID: -673823888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388_19
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 310
+        width: 65
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7fdab917880eff40b83d5bd40c96585
+      internalID: -876679689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388_20
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 310
+        width: 65
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddbcd5d39995c86429d866cb027acb6d
+      internalID: -265823574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388_21
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 310
+        width: 65
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b21d7189411624f4298d22ab64b87e71
+      internalID: -1355237553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388_22
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 310
+        width: 65
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2038135cfb27c64b92253e99613024a
+      internalID: 1394708432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388_23
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 310
+        width: 65
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9914f89374cae1546bc147b8c5604c1e
+      internalID: -433609248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388_24
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 262
+        width: 65
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d880e769487dd3448c721e123014b91
+      internalID: -62833669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388_25
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 262
+        width: 65
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b31e6997c509b8458f61359a4e3fc14
+      internalID: 1088520508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388_26
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 262
+        width: 65
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a976b4c75af137b4ba7bad267c7616e0
+      internalID: -1141794457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388_27
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 262
+        width: 65
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1f6101cb971d1d4c990ed2df5a41205
+      internalID: -156931126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388_28
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 262
+        width: 65
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7681e09344e5569468229b23c1d053e2
+      internalID: -478005011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388_29
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 262
+        width: 65
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86a286fe8b9a49d449afeb419c564c6f
+      internalID: 421617565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388_30
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 262
+        width: 65
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4315abad68272ec46a18cd72be6b4d54
+      internalID: -1626927225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388_31
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 262
+        width: 65
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e384d43965ee404c8a014f4a16cbc29
+      internalID: -1620363192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388_32
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 214
+        width: 65
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56cf28a6f1b0cdf4daa74e2e3bfca81d
+      internalID: -713903172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388_33
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 214
+        width: 65
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9bc093bcaffc5e488b899cf08211004
+      internalID: 928549381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388_34
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 214
+        width: 65
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3685fcf1bc53d2b4185f16160bbdc9e2
+      internalID: -129710199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388_35
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 214
+        width: 65
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d0b1b6df872fdf4d9717d15a82c82cf
+      internalID: 893166463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388_36
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 214
+        width: 65
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2feb843f828f7b2488e34b7345a6067c
+      internalID: 504501406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388_37
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 214
+        width: 65
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48ff8395ef0145f41b3c93c05d6376ab
+      internalID: 621700738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388_38
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 214
+        width: 65
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12ad6362090a8ae49b04bdc9115cf7de
+      internalID: -742751439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388_39
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 214
+        width: 65
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92748d7825a079245b82ccfa9f33c665
+      internalID: 222949551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388_40
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 166
+        width: 65
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 295f0dde4c1750a4ea024fec68a240b4
+      internalID: 1214603166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388_41
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 166
+        width: 65
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f085d1d1be31b634195d48e525f4f151
+      internalID: -1286158185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388_42
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 166
+        width: 65
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7793ec8f1f7235e4e81a43d7b38a4c49
+      internalID: -433819209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388_43
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 166
+        width: 65
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22593f4c59faa49468e9324d4a657afa
+      internalID: 1639224837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388_44
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 166
+        width: 65
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ecf17f8b7d72ed4ebcfbe8ebd45ccb7
+      internalID: 1520658043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388_45
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 166
+        width: 65
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c09543110c3ba5b45baa9d245233e3a8
+      internalID: 215023072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388_46
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 166
+        width: 65
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26b2ce4bcec138b4a9121b1333a790ed
+      internalID: 1683793799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388_47
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 166
+        width: 65
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6f2cce2b13e14342bfc6c2760181f0d
+      internalID: 2092752345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388_48
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 118
+        width: 65
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c54b8e13a20e1e49964435aac6abb29
+      internalID: -904071078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388_49
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 118
+        width: 65
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7eee6189afa7d6f4b8396b9c6f510ee9
+      internalID: 1381826808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388_50
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 118
+        width: 65
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f1cb3aec1942ae4db51b6ec275e52e1
+      internalID: -1424835988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388_51
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 118
+        width: 65
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50f744febf1b43d4693c41adb41f34da
+      internalID: -694584481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388_52
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 118
+        width: 65
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 925adbdb381244649904c0bd54419dd7
+      internalID: 384327710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388_53
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 118
+        width: 65
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 467abe79855a18a499edb7259fecd784
+      internalID: -2050663432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388_54
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 118
+        width: 65
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76e73a5407785a54cb1639a4b761056e
+      internalID: -639601364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388_55
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 118
+        width: 65
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca106298e57fcc541b9c81ff35a8bc1b
+      internalID: 1345965980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388_56
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 70
+        width: 65
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 548dfbd82f42ef74db9928131b061947
+      internalID: -857454893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388_57
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 70
+        width: 65
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80ee9efe2a706b0489f941ae9c1d20ce
+      internalID: -1175600421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388_58
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 70
+        width: 65
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5d85d1899f00e143a3cf2f4faa6b73b
+      internalID: 1580357256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388_59
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 70
+        width: 65
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92963027c84e5cb4c8c2ca824efebab8
+      internalID: 2075610321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388_60
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 70
+        width: 65
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37db786fe9e8eea40b1accfee1ef81de
+      internalID: -948194593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388_61
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 70
+        width: 65
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41b3db1133047b44784e9831728d017b
+      internalID: 496301947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388_62
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 70
+        width: 65
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43bee43f185118544af5dc6b837ee0f4
+      internalID: 691667641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388_63
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 70
+        width: 65
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b216224d996b9e14cb8747b242e1cdff
+      internalID: -1720648386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388_64
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 22
+        width: 65
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 951325d9073df8f41a04562cda7dd5cb
+      internalID: 1286074429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388_65
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 22
+        width: 65
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8503c0a75653d9743987e0ce7e69a4c4
+      internalID: 936000389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388_66
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 22
+        width: 65
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0baf26dc593f5a47a60f71c68d7658c
+      internalID: -534122389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388_67
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 22
+        width: 65
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 632e38e0486dda649988f5ea88eb117b
+      internalID: 554380135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388_68
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 22
+        width: 65
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c41b5f556b4b5a4d8c5e7a4d7edf5fe
+      internalID: 1940983405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388_69
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 22
+        width: 65
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eeb3e519042c0744e9ef4473b0c2acd8
+      internalID: -1370961205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388_70
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 22
+        width: 65
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a59e214a67c2b94fafd402e84ef2990
+      internalID: -1520490985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: civ2 tileset 2388_71
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 22
+        width: 65
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 757319957fbf856448a75e4cfe625521
+      internalID: 2125567015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 02f54de367e7f9740b61e87c554f1aa4
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      civ2 tileset 2388_0: 1260163180
+      civ2 tileset 2388_1: -671541978
+      civ2 tileset 2388_10: 1639091607
+      civ2 tileset 2388_11: 689162178
+      civ2 tileset 2388_12: 29253084
+      civ2 tileset 2388_13: 1781928272
+      civ2 tileset 2388_14: -1862315433
+      civ2 tileset 2388_15: 993382982
+      civ2 tileset 2388_16: -871630757
+      civ2 tileset 2388_17: 947670474
+      civ2 tileset 2388_18: -673823888
+      civ2 tileset 2388_19: -876679689
+      civ2 tileset 2388_2: -551317725
+      civ2 tileset 2388_20: -265823574
+      civ2 tileset 2388_21: -1355237553
+      civ2 tileset 2388_22: 1394708432
+      civ2 tileset 2388_23: -433609248
+      civ2 tileset 2388_24: -62833669
+      civ2 tileset 2388_25: 1088520508
+      civ2 tileset 2388_26: -1141794457
+      civ2 tileset 2388_27: -156931126
+      civ2 tileset 2388_28: -478005011
+      civ2 tileset 2388_29: 421617565
+      civ2 tileset 2388_3: 795927053
+      civ2 tileset 2388_30: -1626927225
+      civ2 tileset 2388_31: -1620363192
+      civ2 tileset 2388_32: -713903172
+      civ2 tileset 2388_33: 928549381
+      civ2 tileset 2388_34: -129710199
+      civ2 tileset 2388_35: 893166463
+      civ2 tileset 2388_36: 504501406
+      civ2 tileset 2388_37: 621700738
+      civ2 tileset 2388_38: -742751439
+      civ2 tileset 2388_39: 222949551
+      civ2 tileset 2388_4: 6936999
+      civ2 tileset 2388_40: 1214603166
+      civ2 tileset 2388_41: -1286158185
+      civ2 tileset 2388_42: -433819209
+      civ2 tileset 2388_43: 1639224837
+      civ2 tileset 2388_44: 1520658043
+      civ2 tileset 2388_45: 215023072
+      civ2 tileset 2388_46: 1683793799
+      civ2 tileset 2388_47: 2092752345
+      civ2 tileset 2388_48: -904071078
+      civ2 tileset 2388_49: 1381826808
+      civ2 tileset 2388_5: 1970016557
+      civ2 tileset 2388_50: -1424835988
+      civ2 tileset 2388_51: -694584481
+      civ2 tileset 2388_52: 384327710
+      civ2 tileset 2388_53: -2050663432
+      civ2 tileset 2388_54: -639601364
+      civ2 tileset 2388_55: 1345965980
+      civ2 tileset 2388_56: -857454893
+      civ2 tileset 2388_57: -1175600421
+      civ2 tileset 2388_58: 1580357256
+      civ2 tileset 2388_59: 2075610321
+      civ2 tileset 2388_6: -514113990
+      civ2 tileset 2388_60: -948194593
+      civ2 tileset 2388_61: 496301947
+      civ2 tileset 2388_62: 691667641
+      civ2 tileset 2388_63: -1720648386
+      civ2 tileset 2388_64: 1286074429
+      civ2 tileset 2388_65: 936000389
+      civ2 tileset 2388_66: -534122389
+      civ2 tileset 2388_67: 554380135
+      civ2 tileset 2388_68: 1940983405
+      civ2 tileset 2388_69: -1370961205
+      civ2 tileset 2388_7: 403692513
+      civ2 tileset 2388_70: -1520490985
+      civ2 tileset 2388_71: 2125567015
+      civ2 tileset 2388_8: -1783272550
+      civ2 tileset 2388_9: -532254406
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
