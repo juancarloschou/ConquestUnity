@@ -94,11 +94,12 @@ public class TerritoryController : MonoBehaviour
 
         // Create a new texture that matches the size of the territory
         Texture2D texture = new Texture2D(100, 100); // Adjust size as necessary
+        Color transparentColor = new Color(territoryColor.r, territoryColor.g, territoryColor.b, 0.75f); // 50% transparency
         for (int x = 0; x < texture.width; x++)
         {
             for (int y = 0; y < texture.height; y++)
             {
-                texture.SetPixel(x, y, territoryColor);
+                texture.SetPixel(x, y, transparentColor);
             }
         }
         texture.Apply();
@@ -124,9 +125,6 @@ public class TerritoryController : MonoBehaviour
         //Debug.Log("scale " + scale);
         fillObject.transform.localScale = new Vector3(scale, scale, 1);
 
-        // Add a PolygonCollider2D to the fill object to ensure correct collision detection
-        //PolygonCollider2D fillCollider = fillObject.AddComponent<PolygonCollider2D>();
-        //fillCollider.points = territoryBoundary.ToArray();
     }
 
     void OnMouseDown()
