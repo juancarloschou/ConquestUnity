@@ -23,14 +23,24 @@ public class MapManager : MonoBehaviour
     // For drawing the territories lines of the map, and draw selected territory
     public Material territoryLineMaterial; // Material for the territory lines
     public Material selectedTerritoryMaterial; // Material for selected territory
-
     private float lineWidth = 0.25f; // Grosor de las líneas
-    //private string sortingLayerNameLines = "Foreground"; // Set the desired sorting layer
-    //private int sortingOrderLines = 1; // Set the desired sorting order
+
+    public Color neutralTerritoryColor = Color.grey; // color of neutral territory
 
     // For drawing the staring basement of the players
     public Sprite basementSprite; // Asign the sprite of the town 
 
+    // layer and order of lines (boundaries)
+    private string sortingLayerNameLines = "Default"; // Set the desired sorting layer
+    private int sortingOrderLines = 2; // Set the desired sorting order 
+
+    // layer and order of filling (territory)
+    private string sortingLayerNameFilling = "Default"; // Set the desired sorting layer
+    private int sortingOrderFilling = 1; // Set the desired sorting order 
+
+    // layer and order of building (basement)
+    private string sortingLayerNameBuilings = "Default"; // Set the desired sorting layer
+    private int sortingOrderBuildings = 5; // Set the desired sorting order 
 
 
     void Awake()
@@ -65,10 +75,7 @@ public class MapManager : MonoBehaviour
             Debug.LogError("basementSprite is not assigned in the Inspector.");
             return;
         }
-
-        GenerateTerritories();
     }
-
     
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
@@ -76,17 +83,10 @@ public class MapManager : MonoBehaviour
         // you can use Unity's SceneManager to detect when the active scene changes and then call the method accordingly.
         if (scene.name == "GameScene")
         {
-            Debug.Log("MapManeger OnSceneLoaded GameScene");
+            Debug.Log("MapManager OnSceneLoaded GameScene");
+            GenerateTerritories();
             DrawTerritoryLines();
             DrawInitialBasements();
-
-            /*
-            // Optional: Log parents of all territory objects
-            foreach (Transform child in transform)
-            {
-                LogParent(child.gameObject);
-            }
-            */
         }
     }
     
@@ -95,51 +95,25 @@ public class MapManager : MonoBehaviour
         SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 
-    /*
-    // Generate territories on the map, set the initialBasementes and territories of each player
-    void GenerateTerritories()
-    {
-        // Example: Generate and draw a sample territory
-        territories = new List<Territory>();
-
-        Vector2 totalMapInitial = new Vector2(-16, -16);
-        Vector2 totalMapSize = new Vector2(32, 32);
-        Vector2 territorySize = new Vector2(4, 4);
-        int number = 1;
-
-        // Calculate the number of territories that fit in each dimension
-        int horizontalCount = (int)(totalMapSize.x / territorySize.x);
-        int verticalCount = (int)(totalMapSize.y / territorySize.y);
-
-        // Nested loops to generate territories
-        for (int i = 0; i < horizontalCount; i++)
-        {
-            for (int j = 0; j < verticalCount; j++)
-            {
-                Vector2 initialPoint = new Vector2(
-                    totalMapInitial.x + i * territorySize.x,
-                    totalMapInitial.y + j * territorySize.y
-                );
-
-                List<Vector2> territoryBoundary = GenerateVectorsTerritory(initialPoint, territorySize);
-                territories.Add(new Territory("SampleTerritory" + (number++).ToString(), 0, 0, 0, 0, territoryBoundary));
-            }
-        }
-    }
-    */
-
     // Generate territories on the map, set the initial basements and territories of each player
     void GenerateTerritories()
     {
+        int selectedPlayerQuantity = GameManager.Instance.GetSelectedPlayerQuantity();
+        Debug.Log($"GenerateTerritories selectedPlayerQuantity {selectedPlayerQuantity}");
+
         territories = new List<Territory>();
 
         Vector2 totalMapInitial = new Vector2(-16, -16);
         Vector2 totalMapSize = new Vector2(32, 32);
-        Vector2 territorySize = new Vector2(4, 4);
+        Vector2 territorySize = new Vector2(8, 8);
         int number = 1;
 
         int horizontalCount = (int)(totalMapSize.x / territorySize.x);
         int verticalCount = (int)(totalMapSize.y / territorySize.y);
+        int totalTerritories = horizontalCount * verticalCount;
+
+        // Define the corners for each player based on the number of players
+        Vector2[] corners = GenerateCorners(selectedPlayerQuantity, totalMapInitial, totalMapSize, territorySize);
 
         for (int i = 0; i < horizontalCount; i++)
         {
@@ -151,28 +125,63 @@ public class MapManager : MonoBehaviour
                 );
 
                 List<Vector2> territoryBoundary = GenerateVectorsTerritory(initialPoint, territorySize);
-                int player = 0;
+
+                // Assign player and basementPlayer based on corner position
+                int player = 0; // neutral
                 int basementPlayer = 0;
 
-                if (number == 1)
+                for (int k = 0; k < corners.Length; k++)
                 {
-                    player = 1;
-                    basementPlayer = 1;
-                }
-                else if (number == 64)
-                {
-                    player = 2;
-                    basementPlayer = 2;
-                }
-                else
-                {
-                    player = 0;
+                    if (initialPoint == corners[k])
+                    {
+                        player = k + 1;
+                        basementPlayer = k + 1;
+                        //Debug.Log($"player {player}, basementPlayer {basementPlayer}, corners.Length {corners.Length}");
+                        break;
+                    }
                 }
 
-                territories.Add(new Territory("Territory" + number, 10, 5, player, basementPlayer, territoryBoundary));
+                territories.Add(new Territory("Territory" + number, 0, 0, player, basementPlayer, territoryBoundary));
                 number++;
             }
         }
+    }
+
+    // Define the corners for each player based on the number of players
+    Vector2[] GenerateCorners(int selectedPlayerQuantity, Vector2 totalMapInitial, Vector2 totalMapSize, Vector2 territorySize)
+    {
+        Vector2[] corners = new Vector2[selectedPlayerQuantity];
+        switch (selectedPlayerQuantity)
+        {
+            case 2: // Two players, opposite corners
+                corners[0] = new Vector2(totalMapInitial.x, totalMapInitial.y); // Bottom left
+                corners[1] = new Vector2(totalMapInitial.x + totalMapSize.x - territorySize.x, totalMapInitial.y + totalMapSize.y - territorySize.y); // Top right
+                break;
+            case 3: // Three players, one player in each corner and the remaining one randomly placed
+                corners[0] = new Vector2(totalMapInitial.x, totalMapInitial.y); // Bottom left
+                corners[1] = new Vector2(totalMapInitial.x + totalMapSize.x - territorySize.x, totalMapInitial.y + totalMapSize.y - territorySize.y); // Top right
+
+                // Randomly choose one of the two remaining corners for the third player
+                if (Random.value < 0.5f)
+                {
+                    corners[2] = new Vector2(totalMapInitial.x, totalMapInitial.y + totalMapSize.y - territorySize.y); // Top left
+                }
+                else
+                {
+                    corners[2] = new Vector2(totalMapInitial.x + totalMapSize.x - territorySize.x, totalMapInitial.y); // Bottom right
+                }
+                break;
+            case 4: // Four players, each player in one corner
+                corners[0] = new Vector2(totalMapInitial.x, totalMapInitial.y); // Bottom left
+                corners[1] = new Vector2(totalMapInitial.x + totalMapSize.x - territorySize.x, totalMapInitial.y); // Bottom right
+                corners[2] = new Vector2(totalMapInitial.x, totalMapInitial.y + totalMapSize.y - territorySize.y); // Top left
+                corners[3] = new Vector2(totalMapInitial.x + totalMapSize.x - territorySize.x, totalMapInitial.y + totalMapSize.y - territorySize.y); // Top right
+                break;
+            default:
+                Debug.LogError("Invalid number of players!");
+                break;
+        }
+        return corners;
     }
 
     List<Vector2> GenerateVectorsTerritory(Vector2 initialPoint, Vector2 size)
@@ -201,26 +210,22 @@ public class MapManager : MonoBehaviour
 
             /// Initialize the TerritoryController script
             TerritoryController territoryController = territoryObject.GetComponent<TerritoryController>();
-            territoryController.Init(territory, territoryLineMaterial, lineWidth);
+
+            // Get the color of the player for this territory
+            Color territoryColor = neutralTerritoryColor;
+            if (territory.Player != 0)
+            {
+                territoryColor = GameManager.Instance.GetPlayerColor(territory.Player);
+                Debug.Log($"territory.Id {territory.Id}, territory.Player {territory.Player}, territoryColor {territoryColor}, territory.BasementPlayer {territory.BasementPlayer}");
+            }
+
+            // Initialize the TerritoryController with territory data and player color
+            territoryController.Init(territory, territoryLineMaterial, lineWidth, territoryColor, sortingLayerNameLines, sortingOrderLines, sortingLayerNameFilling, sortingOrderFilling);
 
             // Log the creation of the territory object
             //Debug.Log($"Created territory object: {territoryObject.name}");
         }
     }
-
-    /*
-    void LogParent(GameObject obj)
-    {
-        if (obj.transform.parent != null)
-        {
-            Debug.Log($"{obj.name} parent: {obj.transform.parent.name}");
-        }
-        else
-        {
-            Debug.Log($"{obj.name} has no parent");
-        }
-    }
-    */
 
     void DrawInitialBasements()
     {
@@ -230,6 +235,7 @@ public class MapManager : MonoBehaviour
             if (territory.BasementPlayer > 0)
             {
                 Vector2 center = GetTerritoryCenter(territory.TerritoryBoundary);
+
                 GameObject basementObject = new GameObject("Basement" + territory.BasementPlayer);
                 basementObject.transform.SetParent(transform);
                 basementObject.transform.position = center;
@@ -238,21 +244,25 @@ public class MapManager : MonoBehaviour
                 SpriteRenderer spriteRenderer = basementObject.AddComponent<SpriteRenderer>();
                 spriteRenderer.sprite = basementSprite;
 
+                // Set the sorting layer and order for the basement
+                spriteRenderer.sortingLayerName = sortingLayerNameBuilings;
+                spriteRenderer.sortingOrder = sortingOrderBuildings;
+
                 // Adjust scale if necessary
                 float territoryArea = CalculateTerritoryArea(territory.TerritoryBoundary);
-                Debug.Log("territoryArea " + territoryArea);
+                //Debug.Log("territoryArea " + territoryArea);
                 float spriteArea = basementSprite.bounds.size.x * basementSprite.bounds.size.y;
-                Debug.Log("spriteArea " + spriteArea);
+                //Debug.Log("spriteArea " + spriteArea);
                 float scale = Mathf.Sqrt(territoryArea / spriteArea); // Calculate scale based on territory area and sprite area
                 scale = scale * (float)0.75;
                 scale = Mathf.RoundToInt(scale); // Round the scale to the nearest integer
-                Debug.Log("scale " + scale);
+                //Debug.Log("scale " + scale);
                 basementObject.transform.localScale = new Vector3(scale, scale, 1f);
             }
         }
     }
 
-    Vector2 GetTerritoryCenter(List<Vector2> boundary)
+    public Vector2 GetTerritoryCenter(List<Vector2> boundary)
     {
         float x = 0;
         float y = 0;
@@ -265,7 +275,7 @@ public class MapManager : MonoBehaviour
     }
 
     // Function to calculate the area of the territory
-    float CalculateTerritoryArea(List<Vector2> boundary)
+    public float CalculateTerritoryArea(List<Vector2> boundary)
     {
         float area = 0f;
         int numPoints = boundary.Count;

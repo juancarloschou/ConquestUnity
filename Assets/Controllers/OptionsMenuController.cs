@@ -64,7 +64,7 @@ public class OptionsMenuController : MonoBehaviour
     {
         // Add color options to the dropdown
         // (You can customize this based on your color choices)
-        List<string> colorOptions = new List<string> { "Blue", "Green", "Red", "Yellow" };
+        List<string> colorOptions = new List<string> { "Blue", "Red", "Green", "Yellow" };
         playerColorDropdown.ClearOptions();
         playerColorDropdown.AddOptions(colorOptions);
     }
@@ -87,42 +87,8 @@ public class OptionsMenuController : MonoBehaviour
     void OnPlayerColorChanged(int value)
     {
         // Map the dropdown index to a color (customize based on your color choices)
-        Color selectedPlayerColor = GetColorForIndex(value);
+        Color selectedPlayerColor = GameManager.Instance.GetColorForIndex(value);
         GameManager.Instance.SetSelectedPlayerColor(selectedPlayerColor);
-    }
-
-    // Method to get a Color for a given dropdown index
-    Color GetColorForIndex(int index)
-    {
-        switch (index)
-        {
-            case 0:
-                return Color.blue;
-            case 1:
-                return Color.green;
-            case 2:
-                return Color.red;
-            case 3:
-                return Color.yellow;
-            default:
-                return Color.blue; // Default color
-        }
-    }
-
-    // Method to get a index for a given Color
-    int GetIndexForColor(Color color)
-    {
-        // Map the color to a dropdown index (customize based on your color choices)
-        if (color == Color.blue)
-            return 0;
-        else if (color == Color.green)
-            return 1;
-        else if (color == Color.red)
-            return 2;
-        else if (color == Color.yellow)
-            return 3;
-        else
-            return 0; // Default index
     }
 
     // Method to set initial dropdown values based on GameManager
@@ -131,7 +97,7 @@ public class OptionsMenuController : MonoBehaviour
         // Set initial dropdown values based on GameManager values
         gameTypeDropdown.value = (int)GameManager.Instance.GetSelectedGameType();
         playerQuantityDropdown.value = GameManager.Instance.GetSelectedPlayerQuantity() - 2; // Subtract 2 to convert quantity to dropdown index (assuming minimum is 2 player)
-        playerColorDropdown.value = GetIndexForColor(GameManager.Instance.GetSelectedPlayerColor());
+        playerColorDropdown.value = GameManager.Instance.GetIndexForColor(GameManager.Instance.GetSelectedPlayerColor());
         Debug.Log($"SetDropdownValuesFromGameManager. Game Type: {gameTypeDropdown.value}, Player Quantity: {playerQuantityDropdown.value}, Player Color: {playerColorDropdown.value}");
     }
 
