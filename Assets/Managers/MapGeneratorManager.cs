@@ -9,14 +9,14 @@ using UnityEngine;
 /// </summary>
 public class MapGeneratorManager : MonoBehaviour
 {
-    private static MapGeneratorManager instance;
+    public static MapGeneratorManager Instance { get; private set; }
 
     void Awake()
     {
         // Ensure only one instance exists.
-        if (instance == null)
+        if (Instance == null)
         {
-            instance = this;
+            Instance = this;
             DontDestroyOnLoad(gameObject); // This ensures the GameObject persists between scenes.
         }
         else

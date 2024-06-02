@@ -11,7 +11,7 @@ using UnityEngine;
 /// </summary>
 public class UIManager : MonoBehaviour
 {
-    private static UIManager instance;
+    public static UIManager instance { get; private set; }
 
     void Awake()
     {

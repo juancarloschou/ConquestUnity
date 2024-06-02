@@ -3,23 +3,18 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuController : MonoBehaviour
 {
-    // Reference to the GameManager
-    private GameManager gameManager;
-
     // Start is called before the first frame update
     void Start()
     {
-        // Find the GameManager in the scene
-        gameManager = FindFirstObjectByType<GameManager>();
     }
 
     public void PlayGame()
     {
         // Ensure the GameManager is found before starting the game
-        if (gameManager != null)
+        if (GameManager.Instance != null)
         {
             // Set selected options in GameManager before starting the game
-            gameManager.StartGame();
+            GameManager.Instance.StartGame();
         }
     }
 

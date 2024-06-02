@@ -13,17 +13,16 @@ using UnityEngine;
 /// </summary>
 public class TerritoryManager : MonoBehaviour
 {
-    private static TerritoryManager instance;
+    public static TerritoryManager Instance { get; private set; }
 
-    private MapManager mapManager;
-    private Territory territory;
+    private TerritoryController selectedTerritory; // Currently selected territory
 
     void Awake()
     {
         // Ensure only one instance exists.
-        if (instance == null)
+        if (Instance == null)
         {
-            instance = this;
+            Instance = this;
             DontDestroyOnLoad(gameObject); // This ensures the GameObject persists between scenes.
         }
         else
@@ -34,15 +33,17 @@ public class TerritoryManager : MonoBehaviour
         // Additional initialization code...
     }
 
-    public void Init(MapManager mapManager, Territory territory)
+    public void SelectTerritory(TerritoryController territory)
     {
-        this.mapManager = mapManager;
-        this.territory = territory;
-    }
+        // Deselect the previous territory if any
+        if (selectedTerritory != null)
+        {
+            selectedTerritory.Deselect();
+        }
 
-    void OnMouseDown()
-    {
-        mapManager.SelectTerritory(territory);
+        // Select the new territory
+        selectedTerritory = territory;
+        selectedTerritory.Select();
     }
 
     // Start is called before the first frame update

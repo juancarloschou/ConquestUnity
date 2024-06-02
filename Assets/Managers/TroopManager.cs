@@ -13,7 +13,7 @@ using UnityEngine;
 /// </summary>
 public class TroopManager : MonoBehaviour
 {
-    private static TroopManager instance;
+    public static TroopManager instance { get; private set; }
 
     void Awake()
     {

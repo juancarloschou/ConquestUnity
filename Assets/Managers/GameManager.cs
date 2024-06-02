@@ -13,7 +13,7 @@ using UnityEngine.SceneManagement;
 /// </summary>
 public class GameManager : MonoBehaviour
 {
-    private static GameManager instance;
+    public static GameManager Instance { get; private set; }
 
     // Default selected options
     private OptionsMenuController.GameType defaultGameType = OptionsMenuController.GameType.Local;
@@ -25,12 +25,15 @@ public class GameManager : MonoBehaviour
     private int selectedPlayerQuantity;
     private Color selectedPlayerColor;
 
+    // What player number is the current player
+    private int currentPlayer;
+
     void Awake()
     {
         // Ensure only one instance exists.
-        if (instance == null)
+        if (Instance == null)
         {
-            instance = this;
+            Instance = this;
             DontDestroyOnLoad(gameObject); // This ensures the GameObject persists between scenes.
         }
         else
@@ -75,6 +78,9 @@ public class GameManager : MonoBehaviour
         // Add logic to start the game with selected options
         // You can access selectedGameType, selectedPlayerQuantity, and selectedPlayerColor here
         // ...
+
+        // What player number is the current player
+        this.currentPlayer = 1;
 
         // For demonstration purposes, let's print the selected options
         Debug.Log($"Starting the game with GameType: {selectedGameType}, Player Quantity: {selectedPlayerQuantity}, Player Color: {selectedPlayerColor}");

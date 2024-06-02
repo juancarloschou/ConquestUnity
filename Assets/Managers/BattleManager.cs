@@ -11,14 +11,14 @@ using UnityEngine;
 /// </summary>
 public class BattleManager : MonoBehaviour
 {
-    private static BattleManager instance;
+    public static BattleManager Instance { get; private set; }
 
     void Awake()
     {
         // Ensure only one instance exists.
-        if (instance == null)
+        if (Instance == null)
         {
-            instance = this;
+            Instance = this;
             DontDestroyOnLoad(gameObject); // This ensures the GameObject persists between scenes.
         }
         else
