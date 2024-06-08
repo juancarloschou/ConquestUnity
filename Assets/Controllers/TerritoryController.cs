@@ -25,7 +25,7 @@ public class TerritoryController : MonoBehaviour
     {
     }
 
-    // Inicializa el territorio con datos
+    // Initialize the territory with data
     public void Init(Territory territory, Material lineMaterial, float lineWidth, Color territoryColor)
     {
         //storage the information about the territory (Id only)

@@ -17,6 +17,8 @@ namespace Assets
         public int BasementPlayer; // starting basement of player (1, 2, 0)
         public List<Vector2> TerritoryBoundary; // for drawing the sides of territory
 
+        public TroopController TroopController; // to find and update the troop of the territory if any
+
         public Territory(string id, int resourceValue, int defendersStrength, int player, int basementPlayer, List<Vector2> territoryBoundary)
         {
             Id = id;

@@ -21,7 +21,7 @@ public class TroopManager : MonoBehaviour
 
     public int knightCost = 5; // cost of the knight
 
-    private float scaleKnight = 0.75f;
+    private float scaleKnight = 0.6f;
 
     void Awake()
     {
@@ -61,6 +61,7 @@ public class TroopManager : MonoBehaviour
                 if(territory != null)
                 {
                     // if troop already exists increase it, if not spawn
+                    TroopController troopController;
                     if (territory.DefendersStrength == 0)
                     {
                         // Instantiate the troop at the center of the territory
@@ -69,7 +70,7 @@ public class TroopManager : MonoBehaviour
                         GameObject knightObject = Instantiate(knightPrefab, spawnPosition, Quaternion.identity, this.transform);
 
                         // Log the name of the object and the parent
-                        Debug.Log($"{knightObject.name} parent: {knightObject.transform.parent.name}");
+                        //Debug.Log($"{knightObject.name} parent: {knightObject.transform.parent.name}");
 
                         SpriteRenderer knightSpriteRenderer = knightObject.GetComponent<SpriteRenderer>();
                         if (knightSpriteRenderer != null)
@@ -81,10 +82,26 @@ public class TroopManager : MonoBehaviour
                             knightSpriteRenderer.transform.localScale = MapManager.Instance.CalculateScaleFromTerritory(
                                 territory.TerritoryBoundary, knightSpriteRenderer, scaleKnight);
                         }
+
+                        troopController = knightObject.GetComponent<TroopController>();
+                        if (troopController != null)
+                        {
+                            territory.TroopController = troopController;
+                        }
+                    }
+                    else
+                    {
+                        troopController = territory.TroopController;
                     }
 
                     // Update troop quantity in the territory (you can implement this as needed)
                     territory.DefendersStrength += 1;
+
+                    // Set the DefendersStrength on the new troop
+                    if (troopController != null)
+                    {
+                        troopController.SetDefendersStrength(territory.DefendersStrength);
+                    }
 
                     // Deduct resources
                     ResourceManager.Instance.DeductResources(knightCost);
