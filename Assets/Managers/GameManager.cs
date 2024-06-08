@@ -28,6 +28,7 @@ public class GameManager : MonoBehaviour
     // Current player and color of each player
     public Color[] playerColors; // Array to store the colors of each player (index based 0)
     public int currentPlayer; // Index to track the current player (starting by 1)
+    public bool alive; // if game is ongoing (no game over)
 
     void Awake()
     {
@@ -49,6 +50,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        alive = false;
     }
 
     // Method to set default options
@@ -82,11 +84,12 @@ public class GameManager : MonoBehaviour
     public void StartGame()
     {
         // Add logic to start the game with selected options
-        // You can access selectedGameType, selectedPlayerQuantity, and selectedPlayerColor here
-        // ...
 
         // What player number is the current player
         currentPlayer = 1;
+
+        // game ongoing, player alive
+        alive = true;
 
         // Initialize playerColors array based on selectedPlayerQuantity
         playerColors = new Color[selectedPlayerQuantity];
@@ -117,6 +120,10 @@ public class GameManager : MonoBehaviour
 
         // For demonstration purposes, let's print the selected options
         Debug.Log($"Starting the game with GameType: {selectedGameType}, Player Quantity: {selectedPlayerQuantity}, Player Color: {selectedPlayerColor}");
+
+        // initialize game other managers
+        ResourceManager.Instance.InitializeGame();
+        MapManager.Instance.InitializeGame();
 
         // Load the GameScene
         SceneManager.LoadScene("GameScene");

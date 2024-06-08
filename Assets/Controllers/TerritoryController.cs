@@ -26,7 +26,7 @@ public class TerritoryController : MonoBehaviour
     }
 
     // Inicializa el territorio con datos
-    public void Init(Territory territory, Material lineMaterial, float lineWidth, Color territoryColor, string sortingLayerNameLines, int sortingOrderLines, string sortingLayerNameFilling, int sortingOrderFilling)
+    public void Init(Territory territory, Material lineMaterial, float lineWidth, Color territoryColor)
     {
         //storage the information about the territory (Id only)
         this.territoryId = territory.Id;
@@ -38,12 +38,6 @@ public class TerritoryController : MonoBehaviour
             return;
         }
 
-        // layer and order
-        //this.sortingLayerNameLines = sortingLayerNameLines;
-        //this.sortingOrderLines = sortingOrderLines;
-        //this.sortingLayerNameFilling = sortingLayerNameFilling;
-        //this.sortingOrderFilling = sortingOrderFilling;
-
         originalMaterial = lineMaterial;
 
         lineRenderer.material = lineMaterial;
@@ -52,8 +46,8 @@ public class TerritoryController : MonoBehaviour
         lineRenderer.loop = true;
 
         // Set the sorting layer and order
-        lineRenderer.sortingLayerName = sortingLayerNameLines;
-        lineRenderer.sortingOrder = sortingOrderLines;
+        lineRenderer.sortingLayerName = MapManager.Instance.sortingLayerNameMap;
+        lineRenderer.sortingOrder = MapManager.Instance.sortingOrderLines;
 
         // Set the color of the line renderer
         //lineRenderer.startColor = territoryColor;
@@ -78,10 +72,10 @@ public class TerritoryController : MonoBehaviour
         polygonCollider.points = territory.TerritoryBoundary.ToArray();
 
         // Fill the territory with the desired color
-        FillTerritory(territoryColor, territory.TerritoryBoundary, sortingLayerNameFilling, sortingOrderFilling);
+        FillTerritory(territoryColor, territory.TerritoryBoundary);
     }
 
-    void FillTerritory(Color territoryColor, List<Vector2> territoryBoundary, string sortingLayerNameFilling, int sortingOrderFilling)
+    void FillTerritory(Color territoryColor, List<Vector2> territoryBoundary)
     {
         Debug.Log("FillTerritory");
 
@@ -108,23 +102,15 @@ public class TerritoryController : MonoBehaviour
         spriteRenderer.sprite = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), Vector2.one * 0.5f);
 
         // Set the sorting layer and order for the fill object
-        spriteRenderer.sortingLayerName = sortingLayerNameFilling;
-        spriteRenderer.sortingOrder = sortingOrderFilling; // Ensure the fill is rendered below the borders
+        spriteRenderer.sortingLayerName = MapManager.Instance.sortingLayerNameMap;
+        spriteRenderer.sortingOrder = MapManager.Instance.sortingOrderFilling; // Ensure the fill is rendered below the borders
 
         // Set the position of the fill object to the center of the territory
         Vector2 center = MapManager.Instance.GetTerritoryCenter(territoryBoundary);
         fillObject.transform.position = new Vector3(center.x, center.y, 0);
 
         // Adjust the scale of the fill object to match the territory size
-        //fillObject.transform.localScale = new Vector3(8, 8, 1);
-        float territoryArea = MapManager.Instance.CalculateTerritoryArea(territoryBoundary);
-        //Debug.Log("territoryArea " + territoryArea);
-        float spriteArea = spriteRenderer.bounds.size.x * spriteRenderer.bounds.size.y;
-        //Debug.Log("spriteArea " + spriteArea);
-        float scale = Mathf.Sqrt(territoryArea / spriteArea); // Calculate scale based on territory area and sprite area
-        //Debug.Log("scale " + scale);
-        fillObject.transform.localScale = new Vector3(scale, scale, 1);
-
+        fillObject.transform.localScale = MapManager.Instance.CalculateScaleFromTerritory(territoryBoundary, spriteRenderer, 1f);
     }
 
     void OnMouseDown()

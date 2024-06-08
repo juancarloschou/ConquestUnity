@@ -419,7 +419,10 @@ MonoBehaviour:
   territoryLineMaterial: {fileID: 2100000, guid: 9bdd09a4304c0ce4a84a6c46f119fa80, type: 2}
   selectedTerritoryMaterial: {fileID: 2100000, guid: 0151dea1ab44eb346906989b172b0364, type: 2}
   neutralTerritoryColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-  basementSprite: {fileID: 8891149072229547294, guid: e8de02b12e8240745bdb3c27a57e5094, type: 3}
+  sortingLayerNameMap: Default
+  sortingOrderFilling: 1
+  sortingOrderLines: 2
+  sortingOrderBuildings: 5
 --- !u!4 &238950407
 Transform:
   m_ObjectHideFlags: 0
@@ -852,6 +855,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72604245723d8eb42897bab2fcbe3753, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  knightPrefab: {fileID: 3539144400600788691, guid: 7d088e5328aa0ad448e4b0eb1f4cee6b, type: 3}
+  knightCost: 5
 --- !u!4 &483698087
 Transform:
   m_ObjectHideFlags: 0
@@ -990,6 +995,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerColors: []
   currentPlayer: 0
+  alive: 0
 --- !u!4 &644779890
 Transform:
   m_ObjectHideFlags: 0
@@ -1287,6 +1293,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca36438b03c0d8944bdd48e3d1cf84e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  basementSprite: {fileID: 8891149072229547294, guid: e8de02b12e8240745bdb3c27a57e5094, type: 3}
 --- !u!4 &1048825158
 Transform:
   m_ObjectHideFlags: 0
@@ -1419,6 +1426,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ecf899541d5dfdf4fb885dad4b1cda1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  resourceText: {fileID: 0}
+  resourceIcon: {fileID: 0}
+  createKnightButton: {fileID: 0}
 --- !u!4 &1892729724
 Transform:
   m_ObjectHideFlags: 0
@@ -1541,6 +1551,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edd93b35945db1545bb86b45ea82f285, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  resourceSprite: {fileID: -496355987196489288, guid: f28dfc2c91f151f439923d6c642e384d, type: 3}
 --- !u!4 &1982933569
 Transform:
   m_ObjectHideFlags: 0

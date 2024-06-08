@@ -33,7 +33,13 @@ public class TerritoryManager : MonoBehaviour
         // Additional initialization code...
     }
 
-    public void SelectTerritory(TerritoryController territory)
+    // Start is called before the first frame update
+    void Start()
+    {
+
+    }
+
+    public void SelectTerritory(TerritoryController territoryController)
     {
         // Deselect the previous territory if any
         if (selectedTerritory != null)
@@ -42,14 +48,56 @@ public class TerritoryManager : MonoBehaviour
         }
 
         // Select the new territory
-        selectedTerritory = territory;
+        selectedTerritory = territoryController;
         selectedTerritory.Select();
+
+        // check if basement selected to show buttons actions
+        bool basement = false;
+        Territory territory = MapManager.Instance.GetTerritoryById(selectedTerritory.territoryId);
+        if(territory != null)
+        {
+            if(territory.BasementPlayer == GameManager.Instance.currentPlayer)
+            {
+                basement = true;
+            }
+        }
+
+        if(basement)
+        {
+            // show button create kinght
+            UIManager.Instance.ShowButtonCreateKnight();
+        }
+        else
+        {
+            // hide button create kinght
+            UIManager.Instance.HideButtonCreateKnight();
+        }
     }
 
-    // Start is called before the first frame update
-    void Start()
+    public bool IsTerritorySelected()
     {
+        return selectedTerritory != null;
+    }
 
+    public bool SelectedTerritoryHasBasementCurrentPlayer()
+    {
+        if (selectedTerritory != null)
+        {
+            Territory territory = MapManager.Instance.GetTerritoryById(selectedTerritory.territoryId);
+            if (territory != null)
+            {
+                if (territory.BasementPlayer == GameManager.Instance.currentPlayer)
+                {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
+    public TerritoryController GetSelectedTerritory()
+    {
+        return selectedTerritory;
     }
 
     // Update is called once per frame

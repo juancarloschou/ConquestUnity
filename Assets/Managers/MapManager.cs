@@ -14,7 +14,7 @@ public class MapManager : MonoBehaviour
 {
     public static MapManager Instance { get; private set; }
 
-    // Asignar el Prefab Territory
+    // Assign the Prefab Territory
     public GameObject territoryPrefab;
 
     // Storages the list of territories of the map (IMPORTANT central information of territories)
@@ -27,20 +27,23 @@ public class MapManager : MonoBehaviour
 
     public Color neutralTerritoryColor = Color.grey; // color of neutral territory
 
-    // For drawing the staring basement of the players
-    public Sprite basementSprite; // Asign the sprite of the town 
 
-    // layer and order of lines (boundaries)
-    private string sortingLayerNameLines = "Default"; // Set the desired sorting layer
-    private int sortingOrderLines = 2; // Set the desired sorting order 
+
+    // instrucctions for order of layers MAP:
+    public string sortingLayerNameMap = "Default"; // Set the desired sorting layer
 
     // layer and order of filling (territory)
-    private string sortingLayerNameFilling = "Default"; // Set the desired sorting layer
-    private int sortingOrderFilling = 1; // Set the desired sorting order 
+    public int sortingOrderFilling = 1; // Set the desired sorting order 
+
+    // layer and order of lines (boundaries)
+    public int sortingOrderLines = 2; // Set the desired sorting order 
 
     // layer and order of building (basement)
-    private string sortingLayerNameBuilings = "Default"; // Set the desired sorting layer
-    private int sortingOrderBuildings = 5; // Set the desired sorting order 
+    public int sortingOrderBuildings = 5; // Set the desired sorting order 
+
+    // layer and order of troops (knight)
+    public int sortingOrderTroops = 8; // Set the desired sorting order 
+
 
 
     void Awake()
@@ -64,19 +67,19 @@ public class MapManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        // Comprobamos que las referencias estén asignadas
+        // Check that references are asigned
         if (territoryPrefab == null)
         {
             Debug.LogError("territoryPrefab is not assigned in the Inspector.");
             return;
         }
-        if (basementSprite == null)
-        {
-            Debug.LogError("basementSprite is not assigned in the Inspector.");
-            return;
-        }
     }
-    
+
+    public void InitializeGame()
+    {
+        GenerateTerritories();
+    }
+
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         // To ensure that DrawTerritoryLines() is only executed in the gameScene and not in the mainScene,
@@ -84,9 +87,7 @@ public class MapManager : MonoBehaviour
         if (scene.name == "GameScene")
         {
             Debug.Log("MapManager OnSceneLoaded GameScene");
-            GenerateTerritories();
-            DrawTerritoryLines();
-            DrawInitialBasements();
+            CreateTerritories(); // draw territory lines (spawn prefabs)
         }
     }
     
@@ -197,7 +198,7 @@ public class MapManager : MonoBehaviour
     
     // Draw territory lines using LineRenderer, based on territories list
     // Generate the game objects as childs of MapManager
-    void DrawTerritoryLines()
+    void CreateTerritories()
     {
         Debug.Log("DrawTerritoryLines " + territories.Count);
         foreach (Territory territory in territories)
@@ -208,7 +209,7 @@ public class MapManager : MonoBehaviour
             // Log the name of the object and the parent
             //Debug.Log($"{territoryObject.name} parent: {territoryObject.transform.parent.name}");
 
-            /// Initialize the TerritoryController script
+            // Initialize the TerritoryController script
             TerritoryController territoryController = territoryObject.GetComponent<TerritoryController>();
 
             // Get the color of the player for this territory
@@ -220,45 +221,10 @@ public class MapManager : MonoBehaviour
             }
 
             // Initialize the TerritoryController with territory data and player color
-            territoryController.Init(territory, territoryLineMaterial, lineWidth, territoryColor, sortingLayerNameLines, sortingOrderLines, sortingLayerNameFilling, sortingOrderFilling);
+            territoryController.Init(territory, territoryLineMaterial, lineWidth, territoryColor);
 
             // Log the creation of the territory object
             //Debug.Log($"Created territory object: {territoryObject.name}");
-        }
-    }
-
-    void DrawInitialBasements()
-    {
-        Debug.Log("DrawInitialBasements");
-        foreach (Territory territory in territories)
-        {
-            if (territory.BasementPlayer > 0)
-            {
-                Vector2 center = GetTerritoryCenter(territory.TerritoryBoundary);
-
-                GameObject basementObject = new GameObject("Basement" + territory.BasementPlayer);
-                basementObject.transform.SetParent(transform);
-                basementObject.transform.position = center;
-
-                // Add SpriteRenderer component
-                SpriteRenderer spriteRenderer = basementObject.AddComponent<SpriteRenderer>();
-                spriteRenderer.sprite = basementSprite;
-
-                // Set the sorting layer and order for the basement
-                spriteRenderer.sortingLayerName = sortingLayerNameBuilings;
-                spriteRenderer.sortingOrder = sortingOrderBuildings;
-
-                // Adjust scale if necessary
-                float territoryArea = CalculateTerritoryArea(territory.TerritoryBoundary);
-                //Debug.Log("territoryArea " + territoryArea);
-                float spriteArea = basementSprite.bounds.size.x * basementSprite.bounds.size.y;
-                //Debug.Log("spriteArea " + spriteArea);
-                float scale = Mathf.Sqrt(territoryArea / spriteArea); // Calculate scale based on territory area and sprite area
-                scale = scale * (float)0.75;
-                scale = Mathf.RoundToInt(scale); // Round the scale to the nearest integer
-                //Debug.Log("scale " + scale);
-                basementObject.transform.localScale = new Vector3(scale, scale, 1f);
-            }
         }
     }
 
@@ -287,6 +253,43 @@ public class MapManager : MonoBehaviour
         }
         area *= 0.5f; // Take half of the sum
         return Mathf.Abs(area); // Return the absolute value of the area
+    }
+
+    public int CountTerritoriesCurrentPlayer()
+    {
+        int count = 0;
+        int currentPlayer = GameManager.Instance.currentPlayer;
+        foreach (Territory territory in territories)
+        {
+            if (territory.Player == currentPlayer)
+                count++;
+        }
+        return count;
+    }
+
+    public Territory GetTerritoryById(string id)
+    {
+        return territories.Find(t => t.Id == id);
+    }
+
+    public Vector3 CalculateScaleFromTerritory(List<Vector2> boundary, SpriteRenderer spriteRenderer, float proportion)
+    {
+        // calculate scale to make sprinte inside territory proportional to its size (75% for example)
+        float territoryArea = MapManager.Instance.CalculateTerritoryArea(boundary);
+        //Debug.Log("territoryArea " + territoryArea);
+        float spriteArea = spriteRenderer.bounds.size.x * spriteRenderer.bounds.size.y;
+        //Debug.Log("spriteArea " + spriteArea);
+        float scale = Mathf.Sqrt(territoryArea / spriteArea); // Calculate scale based on territory area and sprite area
+        scale = scale * proportion;
+        //scale = Mathf.RoundToInt(scale); // Round the scale to the nearest integer
+        //Debug.Log("scale " + scale);
+        return new Vector3(scale, scale, 1f);
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
     }
 }
 
