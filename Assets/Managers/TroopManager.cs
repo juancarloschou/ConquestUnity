@@ -23,6 +23,8 @@ public class TroopManager : MonoBehaviour
 
     private float scaleKnight = 0.6f;
 
+    private TroopController selectedTroop; // Currently selected troop
+
     void Awake()
     {
         // Ensure only one instance exists.
@@ -120,6 +122,19 @@ public class TroopManager : MonoBehaviour
         {
             Debug.Log("No territory selected or selected territory does not have a basement.");
         }
+    }
+
+    public void SelectTroop(TroopController troopController)
+    {
+        // Deselect the previous troop if any
+        if (selectedTroop != null)
+        {
+            selectedTroop.Deselect();
+        }
+
+        // Select the new territory
+        selectedTroop = troopController;
+        selectedTroop.Select();
     }
 
     // Update is called once per frame
