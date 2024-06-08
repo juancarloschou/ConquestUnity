@@ -30,8 +30,6 @@ public class UIManager : MonoBehaviour
         {
             Instance = this;
             DontDestroyOnLoad(gameObject); // This ensures the GameObject persists between scenes.
-
-            SceneManager.sceneLoaded += OnSceneLoaded;
         }
         else
         {
@@ -39,6 +37,7 @@ public class UIManager : MonoBehaviour
         }
 
         // Additional initialization code...
+        SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
     // Start is called before the first frame update

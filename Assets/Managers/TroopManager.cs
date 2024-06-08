@@ -124,6 +124,15 @@ public class TroopManager : MonoBehaviour
         }
     }
 
+    public void DeselectTroop()
+    {
+        // Deselect the previous troop if any
+        if (selectedTroop != null)
+        {
+            selectedTroop.Deselect();
+        }
+    }
+
     public void SelectTroop(TroopController troopController)
     {
         // Deselect the previous troop if any
@@ -132,7 +141,7 @@ public class TroopManager : MonoBehaviour
             selectedTroop.Deselect();
         }
 
-        // Select the new territory
+        // Select the new troop
         selectedTroop = troopController;
         selectedTroop.Select();
     }

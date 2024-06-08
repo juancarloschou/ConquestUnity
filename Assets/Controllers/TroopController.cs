@@ -40,11 +40,13 @@ public class TroopController : MonoBehaviour
         }
     }
 
+    /*
     void OnMouseDown()
     {
         Debug.Log("Troop clicked: " + territoryId);
         TroopManager.Instance.SelectTroop(this);
     }
+    */
 
     public void Select()
     {

@@ -43,8 +43,8 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
         }
 
-        // Set default options on Awake
-        SetDefaultOptions();
+        // Additional initialization code...
+        SetDefaultOptions(); // Set default options on Awake
     }
 
     // Start is called before the first frame update
@@ -127,7 +127,6 @@ public class GameManager : MonoBehaviour
 
         // Load the GameScene
         SceneManager.LoadScene("GameScene");
-
     }
 
     // Method to get a Color for a given dropdown index

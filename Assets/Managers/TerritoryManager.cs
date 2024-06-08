@@ -41,36 +41,41 @@ public class TerritoryManager : MonoBehaviour
 
     public void SelectTerritory(TerritoryController territoryController)
     {
-        // Deselect the previous territory if any
-        if (selectedTerritory != null)
+        Territory territory = MapManager.Instance.GetTerritoryById(territoryController.territoryId);
+        if (territory != null)
         {
-            selectedTerritory.Deselect();
-        }
-
-        // Select the new territory
-        selectedTerritory = territoryController;
-        selectedTerritory.Select();
-
-        // check if basement selected to show buttons actions
-        bool basement = false;
-        Territory territory = MapManager.Instance.GetTerritoryById(selectedTerritory.territoryId);
-        if(territory != null)
-        {
-            if(territory.BasementPlayer == GameManager.Instance.currentPlayer)
+            // Deselect the previous territory if any
+            if (selectedTerritory != null)
             {
-                basement = true;
+                selectedTerritory.Deselect();
             }
-        }
 
-        if(basement)
-        {
-            // show button create kinght
-            UIManager.Instance.ShowButtonCreateKnight();
-        }
-        else
-        {
-            // hide button create kinght
-            UIManager.Instance.HideButtonCreateKnight();
+            TroopController troopController = territory.TroopController;
+            if (troopController != null)
+            {
+                // there is troop on territory, select troop
+                TroopManager.Instance.SelectTroop(troopController);
+            }
+            else
+            {
+                // if ther is no troop, select the new territory
+                selectedTerritory = territoryController;
+                selectedTerritory.Select();
+
+                TroopManager.Instance.DeselectTroop(); // for coherence
+            }
+
+            // check if basement selected to show buttons actions
+            if (territory.BasementPlayer == GameManager.Instance.currentPlayer)
+            {
+                // show button create kinght
+                UIManager.Instance.ShowButtonCreateKnight();
+            }
+            else
+            {
+                // hide button create kinght
+                UIManager.Instance.HideButtonCreateKnight();
+            }
         }
     }
 
