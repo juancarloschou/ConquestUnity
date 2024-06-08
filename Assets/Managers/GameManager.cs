@@ -124,6 +124,9 @@ public class GameManager : MonoBehaviour
         // initialize game other managers
         ResourceManager.Instance.InitializeGame();
         MapManager.Instance.InitializeGame();
+        TerritoryManager.Instance.InitializeGame();
+        TroopManager.Instance.InitializeGame();
+        UIManager.Instance.InitializeGame();
 
         // Load the GameScene
         SceneManager.LoadScene("GameScene");

@@ -12,11 +12,11 @@ public class ResourceManager : MonoBehaviour
 {
     public static ResourceManager Instance { get; private set; }
 
-    // For drawing the resources quantity
-    public Sprite resourceSprite; // Asign the sprite of the resource
-
     private float resources;
     private float resourceGenerationInterval = 1f; // Interval in seconds for resource generation
+
+    private float resourcesPerTerritory = 0.2f;
+    private float resourcesPerBasement = 1f;
 
     void Awake()
     {
@@ -38,12 +38,6 @@ public class ResourceManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        // Check that references are asigned
-        if (resourceSprite == null)
-        {
-            Debug.LogError("resourceSprite is not assigned in the Inspector.");
-            return;
-        }
     }
 
     public void InitializeGame()
@@ -59,7 +53,7 @@ public class ResourceManager : MonoBehaviour
         {
             Debug.Log("ResourceManager OnSceneLoaded GameScene");
 
-            UIManager.Instance.ShowResources(resources, resourceSprite); // Initialize resource display
+            UIManager.Instance.UpdateResourceDisplay(resources); // Initialize resource display
 
             StartCoroutine(GenerateResources()); // start routine
         }
@@ -77,7 +71,8 @@ public class ResourceManager : MonoBehaviour
             yield return new WaitForSeconds(resourceGenerationInterval);
 
             // 1 per basement + 0.2 per territory
-            resources += 1 + MapManager.Instance.CountTerritoriesCurrentPlayer() * 0.2f; 
+            resources += MapManager.Instance.CountBasementsCurrentPlayer() * resourcesPerBasement + 
+                MapManager.Instance.CountTerritoriesCurrentPlayer() * resourcesPerTerritory; 
 
             UIManager.Instance.UpdateResourceDisplay(resources);
         }

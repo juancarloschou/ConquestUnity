@@ -39,49 +39,77 @@ public class TerritoryManager : MonoBehaviour
 
     }
 
-    public void SelectTerritory(TerritoryController territoryController)
+    public void InitializeGame()
     {
-        Territory territory = MapManager.Instance.GetTerritoryById(territoryController.territoryId);
-        if (territory != null)
-        {
-            // Deselect the previous territory if any
-            if (selectedTerritory != null)
-            {
-                selectedTerritory.Deselect();
-            }
-
-            TroopController troopController = territory.TroopController;
-            if (troopController != null)
-            {
-                // there is troop on territory, select troop
-                TroopManager.Instance.SelectTroop(troopController);
-            }
-            else
-            {
-                // if ther is no troop, select the new territory
-                selectedTerritory = territoryController;
-                selectedTerritory.Select();
-
-                TroopManager.Instance.DeselectTroop(); // for coherence
-            }
-
-            // check if basement selected to show buttons actions
-            if (territory.BasementPlayer == GameManager.Instance.currentPlayer)
-            {
-                // show button create kinght
-                UIManager.Instance.ShowButtonCreateKnight();
-            }
-            else
-            {
-                // hide button create kinght
-                UIManager.Instance.HideButtonCreateKnight();
-            }
-        }
+        selectedTerritory = null;
     }
 
     public bool IsTerritorySelected()
     {
         return selectedTerritory != null;
+    }
+
+    public void SelectTerritory(TerritoryController territoryController)
+    {
+        Territory territory = MapManager.Instance.GetTerritoryById(territoryController.territoryId);
+        if (territory != null)
+        {
+            // if troop selected, its a possible movement
+            if (TroopManager.Instance.IsTroopSelected())
+            {
+                // its a movement, not a selection
+                // check destination (not same as origin)
+                int territoryIdOrigin = (int)TroopManager.Instance.TroopSelectedTerritoryId();
+                int territoryIdDestination = territoryController.territoryId;
+                if (TroopManager.Instance.CheckMovement(territoryIdOrigin, territoryIdDestination))
+                {
+                    TroopManager.Instance.CreateMovement(GameManager.Instance.currentPlayer, territoryIdOrigin, territoryIdDestination,
+                        GetDefendersStrengthFromTerritoryId(territoryIdOrigin));
+                }
+                else
+                {
+                    Debug.Log("cancel movement, no CheckMovement");
+                }
+            }
+            else
+            {
+                // no troop selected, so its a selection, not a movement
+                // select territory, but if there is a troop on territory, select the troop
+
+                // Deselect the previous territory if any
+                if (selectedTerritory != null)
+                {
+                    selectedTerritory.Deselect();
+                }
+
+                TroopController troopController = territory.TroopController;
+                if (troopController != null)
+                {
+                    // there is troop on territory, select troop
+                    TroopManager.Instance.SelectTroop(troopController);
+                }
+                else
+                {
+                    // if there is no troop, select the new territory
+                    selectedTerritory = territoryController;
+                    selectedTerritory.Select();
+
+                    //TroopManager.Instance.DeselectTroop(); // cant happen that troop was selected and now select territory (no move)
+                }
+
+                // check if basement selected to show buttons actions (either if territory or troop selected)
+                if (territory.BasementPlayer == GameManager.Instance.currentPlayer)
+                {
+                    // show button create kinght
+                    UIManager.Instance.ShowButtonCreateKnight();
+                }
+                else
+                {
+                    // hide button create kinght
+                    UIManager.Instance.HideButtonCreateKnight();
+                }
+            }
+        }
     }
 
     public bool SelectedTerritoryHasBasementCurrentPlayer()
@@ -103,6 +131,32 @@ public class TerritoryManager : MonoBehaviour
     public TerritoryController GetSelectedTerritory()
     {
         return selectedTerritory;
+    }
+
+    public int GetDefendersStrengthFromTerritoryId(int id)
+    {
+        Territory territory = MapManager.Instance.GetTerritoryById(id);
+        if(territory != null)
+        {
+            return territory.DefendersStrength;
+        }
+        else 
+        { 
+            return 0; 
+        }
+    }
+
+    public TerritoryController GetTerritoryById(int id)
+    {
+        Territory territory = MapManager.Instance.GetTerritoryById(id);
+        if(territory != null )
+        {
+            return territory.territoryController;
+        }
+        else
+        {
+            return null;
+        }
     }
 
     // Update is called once per frame

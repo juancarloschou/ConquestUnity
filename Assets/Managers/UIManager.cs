@@ -20,8 +20,16 @@ public class UIManager : MonoBehaviour
     public TextMeshProUGUI resourceText; // Assign this from the inspector
     public Image resourceIcon; // Assign this from the inspector
 
-    // action buttons
+    // For drawing the resources icon
+    public Sprite resourceSprite; // Asign the sprite of the resource
+
+    // train action buttons
     public Button createKnightButton;
+
+    // movement action buttons
+    public GameObject movementOptionsPanel;
+    public Button cancelSelectionButton;
+    private int quantityMovement;
 
     void Awake()
     {
@@ -43,65 +51,168 @@ public class UIManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        // Check that references are asigned
+        if (resourceSprite == null)
+        {
+            Debug.LogError("resourceSprite is not assigned in the Inspector.");
+            return;
+        }
+    }
+
+    public void InitializeGame()
+    {
+        HideButtonCreateKnight();
+        HideMovementOptions();
     }
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         if (scene.name == "GameScene")
         {
-            resourceText = GameObject.Find("TextResources").GetComponent<TextMeshProUGUI>();
-            resourceIcon = GameObject.Find("ImageResources").GetComponent<Image>();
-            createKnightButton = GameObject.Find("ButtonCreateKnight").GetComponent<Button>();
-            createKnightButton.onClick.AddListener(() => TroopManager.Instance.CreateTroopKnight());
-            HideButtonCreateKnight();
+            resourceText = GameObject.Find("TextResources")?.GetComponent<TextMeshProUGUI>();
+            if(resourceText == null) 
+            {
+                Debug.LogError("Resource icon not found");
+            }
+
+            resourceIcon = GameObject.Find("ImageResources")?.GetComponent<Image>();
+            if (resourceIcon != null)
+            {
+                resourceIcon.sprite = resourceSprite;
+            }
+            else
+            {
+                Debug.LogError("Resource icon not found");
+            }
+
+            createKnightButton = GameObject.Find("ButtonCreateKnight")?.GetComponent<Button>();
+            if (createKnightButton != null)
+            {
+                createKnightButton.onClick.AddListener(() => TroopManager.Instance.CreateTroopKnight());
+                HideButtonCreateKnight();
+            }
+            else
+            {
+                Debug.LogError("createKnightButton not found");
+            }
+
+            // Find and assign the UI elements for movement
+            movementOptionsPanel = GameObject.Find("PanelMovementOptions");
+            if (movementOptionsPanel != null)
+            {
+                Debug.Log("movementOptionsPanel found");
+                //HideMovementOptions();
+            }
+            else
+            {
+                Debug.LogError("PanelMovementOptions not found.");
+            }
+
+            cancelSelectionButton = GameObject.Find("PanelMovementOptions/ButtonCancelSelection")?.GetComponent<Button>();
+            if (cancelSelectionButton != null)
+            {
+                Debug.Log("cancelSelectionButton found");
+                cancelSelectionButton.onClick.AddListener(() => TroopManager.Instance.CancelSelection());
+            }
+            else
+            {
+                Debug.LogError("cancelSelectionButton not found.");
+            }
+
+            // the panel needs to be active to find the button cancel, now I can hide it
+            HideMovementOptions();
         }
         else
         {
-            if (createKnightButton != null)
-            {
-                createKnightButton.onClick.RemoveAllListeners();
-            }
+            createKnightButton?.onClick.RemoveAllListeners();
+            cancelSelectionButton?.onClick.RemoveAllListeners();
         }
     }
 
     void OnDestroy()
     {
         SceneManager.sceneLoaded -= OnSceneLoaded;
+
+        createKnightButton?.onClick.RemoveAllListeners();
+        cancelSelectionButton?.onClick.RemoveAllListeners();
+
     }
 
-    public void HideButtonCreateKnight()
-    {
-        //createKnightButton.enabled = false;
-        createKnightButton.gameObject.SetActive(false);
-    }
-
-    public void ShowButtonCreateKnight()
-    {
-        //createKnightButton.enabled = true;
-        createKnightButton.gameObject.SetActive(true);
-    }
-
+    /*
+    // show for first time, add sprinte and show resources
     public void ShowResources(float resources, Sprite icon)
     {
-        int roundedResources = Mathf.RoundToInt(resources);
-        resourceText.text = roundedResources.ToString();
-
         if (resourceIcon != null)
         {
             resourceIcon.sprite = icon;
-            resourceIcon.enabled = true;
         }
         else
         {
             Debug.LogError("Resource icon not found");
         }
+
+        UpdateResourceDisplay(resources);
     }
+    */
 
     public void UpdateResourceDisplay(float resources)
     {
         int roundedResources = Mathf.RoundToInt(resources);
         resourceText.text = roundedResources.ToString();
     }
+
+    public void HideButtonCreateKnight()
+    {
+        if (createKnightButton != null)
+        {
+            createKnightButton?.gameObject.SetActive(false);
+        }
+    }
+
+    public void ShowButtonCreateKnight()
+    {
+        createKnightButton.gameObject.SetActive(true);
+    }
+
+    public void ShowMovementOptions(int defendersStrength)
+    {
+        // by default all the soldiers
+        quantityMovement = defendersStrength;
+
+        if (quantityMovement > 1)
+        {
+            // Position and display the movement options panel
+            movementOptionsPanel?.SetActive(true);
+        }
+    }
+
+    public void HideMovementOptions()
+    {
+        if (movementOptionsPanel != null)
+        {
+            movementOptionsPanel?.SetActive(false);
+        }
+    }
+
+    //public void ShowCancelSelectionButton()
+    //{
+    //    cancelSelectionButton.gameObject.SetActive(true);
+    //}
+
+    //public void HideCancelSelectionButton()
+    //{
+    //    cancelSelectionButton.gameObject.SetActive(false);
+    //}
+
+    /*
+    public void OnCanvasGroupChanged()
+    {
+        // when the troops are selected the user can cancel the options of movement and deselect
+        TroopManager.Instance.DeselectTroop();
+
+        HideMovementOptions();
+    }
+    */
 
     // Update is called once per frame
     void Update()

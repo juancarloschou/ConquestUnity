@@ -5,7 +5,7 @@ using UnityEngine;
 public class TerritoryController : MonoBehaviour
 {
     // Dont storage the information about the territory. Only the Id (the info is in MapManager -> territories)
-    public string territoryId;
+    public int territoryId;
 
     private Material originalMaterial; // the material for draw the lines when its not selected
 
@@ -77,7 +77,7 @@ public class TerritoryController : MonoBehaviour
 
     void FillTerritory(Color territoryColor, List<Vector2> territoryBoundary)
     {
-        Debug.Log("FillTerritory");
+        //Debug.Log("FillTerritory");
 
         // Create a new GameObject for filling the territory
         GameObject fillObject = new GameObject("TerritoryFill");

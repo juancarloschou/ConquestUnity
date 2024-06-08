@@ -21,9 +21,9 @@ public class OptionsMenuController : MonoBehaviour
     void Start()
     {
         // Get references to Dropdown components
-        gameTypeDropdown = GetDropdownWithName("cmbGameType");
-        playerQuantityDropdown = GetDropdownWithName("cmbPlayerQuantity");
-        playerColorDropdown = GetDropdownWithName("cmbPlayerColor");
+        gameTypeDropdown = GetDropdownWithName("ComboGameType");
+        playerQuantityDropdown = GetDropdownWithName("ComboPlayerQuantity");
+        playerColorDropdown = GetDropdownWithName("ComboPlayerColor");
 
         // Ensure Dropdowns are not null before using them
         if (gameTypeDropdown == null || playerQuantityDropdown == null || playerColorDropdown == null)

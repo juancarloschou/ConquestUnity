@@ -1871,7 +1871,7 @@ GameObject:
   - component: {fileID: 733632616}
   - component: {fileID: 733632615}
   m_Layer: 0
-  m_Name: txtType
+  m_Name: TextType
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2192,7 +2192,7 @@ GameObject:
   - component: {fileID: 846138251}
   - component: {fileID: 846138250}
   m_Layer: 0
-  m_Name: txtOptions
+  m_Name: TextOptions
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2741,7 +2741,7 @@ GameObject:
   - component: {fileID: 956964700}
   - component: {fileID: 956964699}
   m_Layer: 0
-  m_Name: cmbGameType
+  m_Name: ComboGameType
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2881,7 +2881,7 @@ GameObject:
   - component: {fileID: 971968053}
   - component: {fileID: 971968052}
   m_Layer: 0
-  m_Name: cmbPlayerQuantity
+  m_Name: ComboPlayerQuantity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3024,7 +3024,7 @@ GameObject:
   - component: {fileID: 1002426695}
   - component: {fileID: 1002426694}
   m_Layer: 5
-  m_Name: btnReturn
+  m_Name: ButtonReturn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3731,7 +3731,7 @@ GameObject:
   - component: {fileID: 1378786832}
   - component: {fileID: 1378786831}
   m_Layer: 0
-  m_Name: cmbPlayerColor
+  m_Name: ComboPlayerColor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3864,7 +3864,7 @@ GameObject:
   - component: {fileID: 1388362516}
   - component: {fileID: 1388362515}
   m_Layer: 0
-  m_Name: txtColor
+  m_Name: TextColor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4752,7 +4752,7 @@ GameObject:
   - component: {fileID: 1934677895}
   - component: {fileID: 1934677894}
   m_Layer: 0
-  m_Name: txtPlayers
+  m_Name: TextPlayers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

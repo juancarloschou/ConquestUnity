@@ -141,8 +141,7 @@ public class MapManager : MonoBehaviour
                     }
                 }
 
-                territories.Add(new Territory("Territory" + number, 0, 0, player, basementPlayer, territoryBoundary));
-                number++;
+                territories.Add(new Territory(number++, 0, 0, player, basementPlayer, territoryBoundary));
             }
         }
     }
@@ -222,6 +221,9 @@ public class MapManager : MonoBehaviour
             // Initialize the TerritoryController with territory data and player color
             territoryController.Init(territory, territoryLineMaterial, lineWidth, territoryColor);
 
+            // to access to the game object
+            territory.territoryController = territoryController;
+
             // Log the creation of the territory object
             //Debug.Log($"Created territory object: {territoryObject.name}");
         }
@@ -266,7 +268,20 @@ public class MapManager : MonoBehaviour
         return count;
     }
 
-    public Territory GetTerritoryById(string id)
+    // if you conquest other initial basements, count as yours
+    public int CountBasementsCurrentPlayer()
+    {
+        int count = 0;
+        int currentPlayer = GameManager.Instance.currentPlayer;
+        foreach (Territory territory in territories)
+        {
+            if (territory.Player == currentPlayer && territory.BasementPlayer != 0)
+                count++;
+        }
+        return count;
+    }
+
+    public Territory GetTerritoryById(int id)
     {
         return territories.Find(t => t.Id == id);
     }

@@ -1,2 +1,17 @@
 fileFormatVersion: 2
 guid: ecf899541d5dfdf4fb885dad4b1cda1b
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - resourceText: {instanceID: 0}
+  - resourceIcon: {instanceID: 0}
+  - resourceSprite: {instanceID: 0}
+  - createKnightButton: {instanceID: 0}
+  - movementOptionsPanel: {instanceID: 0}
+  - cancelSelectionButton: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

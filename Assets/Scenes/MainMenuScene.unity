@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 144357628}
   - component: {fileID: 144357627}
   m_Layer: 5
-  m_Name: btnExit
+  m_Name: ButtonExit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -265,7 +265,7 @@ GameObject:
   - component: {fileID: 162996501}
   - component: {fileID: 162996500}
   m_Layer: 5
-  m_Name: btnOptions
+  m_Name: ButtonOptions
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -423,6 +423,7 @@ MonoBehaviour:
   sortingOrderFilling: 1
   sortingOrderLines: 2
   sortingOrderBuildings: 5
+  sortingOrderTroops: 8
 --- !u!4 &238950407
 Transform:
   m_ObjectHideFlags: 0
@@ -1428,7 +1429,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   resourceText: {fileID: 0}
   resourceIcon: {fileID: 0}
+  resourceSprite: {fileID: -496355987196489288, guid: f28dfc2c91f151f439923d6c642e384d, type: 3}
   createKnightButton: {fileID: 0}
+  movementOptionsPanel: {fileID: 0}
+  cancelSelectionButton: {fileID: 0}
 --- !u!4 &1892729724
 Transform:
   m_ObjectHideFlags: 0
@@ -1551,7 +1555,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edd93b35945db1545bb86b45ea82f285, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resourceSprite: {fileID: -496355987196489288, guid: f28dfc2c91f151f439923d6c642e384d, type: 3}
 --- !u!4 &1982933569
 Transform:
   m_ObjectHideFlags: 0
@@ -1580,7 +1583,7 @@ GameObject:
   - component: {fileID: 2065191286}
   - component: {fileID: 2065191285}
   m_Layer: 5
-  m_Name: btnPlay
+  m_Name: ButtonPlay
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
